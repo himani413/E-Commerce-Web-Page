@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--------------------------Navigation Bar--------------------*/
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-top: 5px;
+    background: rgb(209, 74, 96);
+    max-width: 100%;
+}
+
+nav{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 70px;
+    padding-bottom: 5px;
+    
+    
+}
+
+nav ul list{
+    display: inline-block;
+    align-content: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.active, nav ul li:hover{
+    background: #692929;
+    border-radius: 3px;
+    padding-right:5px ;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+/*----------------------------Introduction-------------------------*/
+p{
+    color: #555;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.drp-col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.pics img{
+    max-width: 40%;
+    flex-basis: auto;
+    padding: 10px 10px;
+    width: 300px;
+    align-items: center;
+    align-content: center;
+   
+}
+
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+    padding-bottom: 60px;
+}
+
+.header .row{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 65px;
+}
+
+/*-----------------dropdown------------------------*/
+.dropbtn{
+    background-color: crimson;
+    color: whitesmoke;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    width: 160px;
+   margin-top: 10px;
+}
+
+.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(red, green, blue, alpha);
+  z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: palevioletred;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover.dropbtn{
+    background-color: darkred;
+}
+
+ /*------------------order now button-----------------------*/  
+.btn{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #563434;
+}
+
+.delivery{
+    color: rgb(61, 22, 22);
+    text-align: left;
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+/*---------------------------featured products--------------*/
+.products{
+    margin: 50px 0;
+}
+
+.col-3{
+    flex-basis: 20%;
+    max-width: 300px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    transition: transform 0.5s;
+}
+
+.col-3 img{
+    width: 100%;
+}
+
+.col-3:hover{
+    transform: translateY(-15px);
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+.title{
+text-align: center;
+margin: 0 auto 80px;
+position: relative;
+line-height: 50px;
+color: black;
+}
+
+.col-3 p{
+    text-align: center;
+    padding-top: 10px;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.title::after{
+    content: '';
+    background: crimson ;
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h4{
+    font-weight: normal;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*----------------------offer-------------------------------------*/
+.offer{
+    background: radial-gradient(#fff,#ffd6d6); 
+    margin-top: 80px; 
+    padding: 30px 0;
+}
+
+.offer-img{
+   width: 110%;
+}
+
+.col-5{
+    text-align: center;
+    margin:auto;
+}
+
+small{
+    color: #555;
+}
+
+.free{
+    color: crimson;
+}
+
+/*--------------------payment options------------------------------*/
+.payment{
+    margin-right: 450px;
+    margin-left: 450px; 
+}
+
+.pay-col-1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 30px;
+}
+
+.pay-col-1 img{
+    width: 80px;
+    height: 50px;
+    padding: 5px;
+    align-items: center;
+
+}
+
+.payment-container{
+    max-width: 500px;
+    margin: 20px;
+    padding-left: 5px;
+    padding-right: 5px; 
+    align-items: center;
+}
+
+/*--------------------footer-------------------------------*/
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 80px 0 40px;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+} 
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+.footer-col-3 a{
+    color: #8a8a8a;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+    height: 40px;
+}
+
+.footer hr{
+   border: none;
+   background: #b5b5b5;
+   height: 1px;
+   margin: 10px 0; 
+}
+
+.copyright{
+    text-align: center;
+}
